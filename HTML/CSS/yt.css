@@ -1,0 +1,34 @@
+.thumbnail {
+  color: #ec0909;
+  border-color: blue;
+  height: 200px;
+}
+.search-box {
+  display: block;
+  width: 300px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.title {
+  width: 300px;
+}
+.divi {
+  display: inline-block;
+}
+.video-pre {
+  margin: 5px;
+  vertical-align: top;
+  display: inline-block;
+  width: 400px;
+}
+.profile {
+  height: 40px;
+  border-radius: 30px;
+}
+.info {
+  display: inline-block;
+}
+.written{
+  display:block
+}
