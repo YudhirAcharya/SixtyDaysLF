@@ -1,0 +1,31 @@
+body{
+    text-align: center;
+    display: grid;
+    row-gap: 5px;
+}
+.first{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    
+}
+.second{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+}
+#b1 , #b5{
+    background-color: lightseagreen;
+}
+#b2{
+    background-color: lightgreen;
+}
+#b3, #b4{
+    background-color: lightcoral;
+}
+
+.third{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
