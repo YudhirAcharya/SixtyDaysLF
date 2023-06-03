@@ -1,0 +1,25 @@
+*{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+}
+#fist-btn{
+   border-width: 5px;
+   border-color: rgb(255, 0, 0);
+}
+#sec-btn{
+    border-width: 5px;
+    border-color: rgb(0, 255, 34);
+ 
+} 
+#th-btn{
+    border-width: 5px;
+    border-color: rgb(76, 0, 253);
+    
+} 
+.btns{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    
+}
