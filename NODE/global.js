@@ -1,7 +1,20 @@
+const http = require('http')
 
-const sayHi = (name)=>
+const server = http.createServer((req, res)=>
 {
-    console.log("hello "+name);
-}
+    if(req.url==='/')
+    {
+        res.write('hello,welcome to webpage')
+   
+    }
+    if(req.url ==='/about')
+    {
+        res.end("about ussss")
+    }
+    console.log(req)
+    res.end('byee \n see you' 
+    )
+    
+})
 
-module.exports = sayHi
+server.listen(5000)
