@@ -1,20 +1,20 @@
-const http = require('http')
+const fs = require('fs');
 
-const server = http.createServer((req, res)=>
-{
-    if(req.url==='/')
-    {
-        res.write('hello,welcome to webpage')
-   
-    }
-    if(req.url ==='/about')
-    {
-        res.end("about ussss")
-    }
-    console.log(req)
-    res.end('byee \n see you' 
-    )
+fs.mkdir('./new', (err) => {
+  if (err) {
+    throw err;
+  } else {
+    console.log("Directory created");
+
     
-})
-
-server.listen(5000)
+    setTimeout(() => {
+      fs.rmdir('./new', (err) => {
+        if (err) {
+          throw err;
+        } else {
+          console.log("Directory removed");
+        }
+      });
+    }, 5000);
+  }
+});
