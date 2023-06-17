@@ -1,10 +1,97 @@
+body{
+  color: inherit;
+}
+img{
+  max-width: 100%;
+}
 main{
   padding: 10px;
-  max-width: 600px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 
 header{
+  align-items: center;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 50px;
+  
 }
+
+header a{
+  text-decoration: none;
+  color:inherit
+}
+
+header a.logo{
+  color: #9121c5;
+  font-size:150%;
+  font-weight: 700;
+
+}
+header nav {
+  
+  display: flex;
+  gap: 30px;
+}
+
+
+div.post{
+  font-size: small;
+  display: grid;
+  grid-template-columns:0.9fr 1fr;  
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.text h2{
+  margin: 0px;
+}
+p.info{
+  
+  padding-top: 5px;
+  display: flex;
+  gap: 25px;
+}
+div.post p.info{
+margin:0px;
+color: rgb(104, 28, 175);
+font-size: 0.7rem;
+font-style: italic;
+}
+
+span.author{
+  font-weight: bold;
+}
+div.post p.summary{
+  margin-top:8px
+}
+
+form.login form.register{
+  
+  max-width: 400px;
+  margin:0 auto;
+}
+input{
+  width: 70%;
+  display: block;
+  
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 0;
+  background-color: rgb(224, 202, 245);
+  border-bottom: 1px solid  rgb(69, 4, 129);
+  border-radius: 5px;
+}
+button{
+  
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: #a628e0;
+  width: 30%;
+  display: block;
+  height: 50px;
+  border:0;
+  border-radius: 10px;
+}
+
