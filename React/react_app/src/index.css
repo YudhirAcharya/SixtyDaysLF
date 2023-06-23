@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(241, 194, 123);
+  color: rgb(92, 13, 156);
+}
+.booklist {
+  width: 90vw;
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.book {
+  background-color: rgb(99, 236, 134);
+
+  width: 300px;
+  object-fit: cover;
+  padding: 5px;
+  text-align: center;
+  position: relative;
+}
+
+@media screen and (min-width: 800px) {
+  .booklist {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .booklist {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.number {
+  color: white;
+  position: absolute;
+  top: 0;
+  padding: 0.75rem;
+  font-size: 1.25rem;
+  border-top-left-radius: 30px;
+  background-color: blueviolet;
+  border-bottom-right-radius: 30px;
+  opacity: 0.8;
+}
+
+h1.title {
+  text-align: center;
+}

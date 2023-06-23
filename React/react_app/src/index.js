@@ -1,30 +1,23 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
+import books from "./books";
+import "./index.css";
+import Book from "./book";
 
-function Greeting() {
+const Booklist = () => {
   return (
     <React.Fragment>
-      <div>
-        <h3>hi</h3>
-      </div>
-      <h2>you</h2>
-      <div>
-        <Person />
-        <Adderss />
-      </div>
+      <h1 className="title">SHOP ONLINE</h1>
+      <section className="booklist">
+        {books.map((book, index) => {
+          return <Book {...book} number={index} />;
+        })}
+      </section>
     </React.Fragment>
   );
-}
-
-function Person() {
-  return <p>John Wick</p>;
-}
-
-const Adderss = () => {
-  return <p>USA</p>;
 };
+
 const root = ReactDOM.createRoot(
   document.getElementById("root")
 );
-
-root.render(<Greeting />);
+root.render(<Booklist />);
